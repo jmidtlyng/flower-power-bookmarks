@@ -2,9 +2,9 @@
 /.idea
 /vendor
 .DS_Store
-.ddev
-web/bookmark_drawings
-web/bookmark_photos
+/.ddev
+/web/bookmark_drawings
+/web/bookmark_photos
 
 # https://github.com/nystudio107/craft-scripts/blob/master/example.gitignore
 
