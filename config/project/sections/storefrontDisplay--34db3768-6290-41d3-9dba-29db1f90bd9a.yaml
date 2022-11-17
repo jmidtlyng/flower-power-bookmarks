@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: storefrontDisplay
+name: 'Storefront Display'
+propagationMethod: all
+siteSettings:
+  413c467c-3b45-4688-b781-9b0422e54679: # Flower Power Bookmarks
+    enabledByDefault: true
+    hasUrls: true
+    template: storefront-display/_entry
+    uriFormat: 'storefront-display/{slug}'
+structure:
+  maxLevels: null
+  uid: 73137d1b-5526-430f-a24b-c21d473c72c8
+type: structure

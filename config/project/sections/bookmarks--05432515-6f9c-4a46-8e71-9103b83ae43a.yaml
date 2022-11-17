@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: bookmarks
+name: Bookmarks
+propagationMethod: all
+siteSettings:
+  413c467c-3b45-4688-b781-9b0422e54679: # Flower Power Bookmarks
+    enabledByDefault: true
+    hasUrls: true
+    template: bookmarks/_entry
+    uriFormat: 'bookmarks/{slug}'
+type: channel

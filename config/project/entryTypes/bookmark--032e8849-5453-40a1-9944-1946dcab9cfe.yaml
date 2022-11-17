@@ -1,0 +1,79 @@
+fieldLayouts:
+  75649319-18b8-4bd5-b8f4-2666086f22c1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3085e3c4-7ae7-4fda-8f4c-df18b591dcad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0c3ae0ee-9e8a-4370-b662-42b43356521f # Image Drawing
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e0df9b2-053b-4659-9d43-cb01f173f7b5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4006f11-e0f7-4689-97b6-ea028c72f3a6 # Photo HD
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27e8a46b-3167-4aeb-a750-574476b8e8a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14511664-db36-40f2-a6f8-7fbadb581383 # Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f06fefbb-2776-446a-bf8b-574d007623f6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 31ffbd06-1ca7-469c-b7a7-6aeae858de55
+        userCondition: null
+handle: bookmark
+hasTitleField: true
+name: Bookmark
+section: 05432515-6f9c-4a46-8e71-9103b83ae43a # Bookmarks
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

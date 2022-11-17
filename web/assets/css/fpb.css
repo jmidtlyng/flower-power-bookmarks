@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+}
+.gallery {
+	height: 100vh;
+	margin: 0;
+	overflow-y: scroll;
+	padding: 0;
+	scroll-snap-type: y mandatory;
+}
+.gallery-item {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	scroll-snap-align: start;
+	position: relative;
+	width: 100%;
+}
+.gallery-item-detail {
+	left: 8px;
+	position: absolute;
+	top: 8px;
+}
+.gallery-item-detail p {
+	margin-left: 4px;	
+	margin-top: 4px;
+}
+.gallery-item-detail-note {
+	opacity: 1;
+	transition: opacity 1s;
+}
+.gallery-item-detail-note p {
+	display: inline-block;
+}
+.gallery-item-display {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	scroll-snap-align: start;
+	width: 100%;
+}
+.gallery-item-display-drawing,
+.gallery-item-display-photo {
+	height: 90%;
+	position: absolute;
+	transition: opacity 1s;
+}
+.gallery-item-display--invisible {
+	opacity: 0;
+}
+.gallery-item-order {
+	position: absolute;
+	bottom: 4px;
+}
+.gallery-item-order-add {
+	background: #000;
+	border: #000;
+	border-radius: 4px;
+	color: #fff;
+	curser: pointer;
+	padding: 8px;
+	width: 100px;
+}
+.gallery-item-pagination {
+	bottom: 4px;
+	left: 8px;
+	position: absolute;
+}
+/* place bookmark-body class on outline of main bookmark body svg for shimmer 
+	.gallery-item-drawing > svg path[class*="bookmark-body"]{
+			Similar to the Holofoil, but this uses a special image background of a galaxy effect with a gradient rainbow set to color-dodge & color-burn on top.
+			
+			https://github.com/simeydotme/pokemon-cards-css
+		
+		background-image: url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
+											url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
+											url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
+											repeating-linear-gradient(
+												82deg,
+												rgb(219, 204, 86) calc(4%),
+												rgb(121, 199, 58) calc(8%),
+												rgb(58, 192, 183) calc(12%),
+												rgb(71, 98, 207) calc(16%),
+												rgb(170, 69, 209) calc(20%),
+												rgb(255, 90, 180) calc(24%),
+												rgb(255, 90, 180) calc(28%),
+												rgb(170, 69, 209) calc(32%),
+												rgb(71, 98, 207) calc(36%),
+												rgb(58, 192, 183) calc(40%),
+												rgb(121, 199, 58) calc(44%),
+												rgb(219, 204, 86) calc(48%) ),
+											radial-gradient(
+												farthest-corner circle at 50% 50%,
+												rgba(255, 255, 255, 0.6) 5%,
+												rgba(150, 150, 150, .3) 40%,
+												rgb(0, 0, 0) 100% );
+		background-blend-mode: color-dodge, color-burn, saturation, screen;
+		background-position: center, center, center, 50% 50%, center;
+		background-size: cover, cover, cover, 400% 900%, cover;
+		filter: brightness(.75) contrast(1.2) saturate(1.5);
+		mix-blend-mode: color-dodge;
+		overflow: hidden;
+		transform: translateZ(1px);
+		z-index: 3;
+		background-position: center;
+	}
+*/
