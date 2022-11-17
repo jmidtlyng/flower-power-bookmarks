@@ -4,7 +4,7 @@
 .DS_Store
 /.ddev
 /web/bookmark_drawings
-/web/bookmark_photos
+/web/bookmarks_photos
 
 # https://github.com/nystudio107/craft-scripts/blob/master/example.gitignore
 
