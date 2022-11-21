@@ -17,11 +17,11 @@ function revealHdPhoto(el_galleryItem) {
 	if(el_itemPhoto !== null){
 		// if drawing exists, hide
 		if(el_itemDrawing !== null){
-			el_itemDrawing.classList.add('gallery-item-display--invisible');
+			// el_itemDrawing.classList.add('gallery-item-display--invisible');
 			el_itemNote.classList.add('gallery-item-display--invisible');
 		}
 		
 		// reveal photo
-		el_itemPhoto.classList.remove('gallery-item-display--invisible');
+		// el_itemPhoto.classList.remove('gallery-item-display--invisible');
 	}
 }

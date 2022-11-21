@@ -1,4 +1,4 @@
-dateModified: 1667978935
+dateModified: 1669014487
 email:
   fromEmail: jacobmidtlyng@gmail.com
   fromName: 'Flower Power Bookmarks'
@@ -17,7 +17,7 @@ fs:
     settings:
       path: '@webroot'
     type: craft\fs\Local
-    url: /bookmarks_photos
+    url: /bookmark_photos
 meta:
   __names__:
     0c3ae0ee-9e8a-4370-b662-42b43356521f: 'Image Drawing' # Image Drawing
