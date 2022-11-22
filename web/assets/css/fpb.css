@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 }
 .gallery {
@@ -27,8 +29,12 @@ body {
 	margin-top: 4px;
 }
 .gallery-item-detail-note {
+	max-width: 100px;
 	opacity: 1;
 	transition: opacity 1s;
+}
+.gallery-item-detail-title {
+	margin-bottom: 0;
 }
 .gallery-item-detail-note p {
 	display: inline-block;
@@ -43,7 +49,7 @@ body {
 }
 .gallery-item-display-drawing,
 .gallery-item-display-photo {
-	height: calc(100% - 44px);
+	height: calc(100% - 56px);
 	position: absolute;
 	top: 4px;
 	transition: opacity 1s;
@@ -52,8 +58,9 @@ body {
 	opacity: 0;
 }
 .gallery-item-order {
-	position: absolute;
 	bottom: 4px;
+	position: absolute;
+	right: 8px;
 }
 .gallery-item-order-add {
 	background: #000;
@@ -61,8 +68,8 @@ body {
 	border-radius: 4px;
 	color: #fff;
 	cursor: pointer;
+	font-size: 20px;
 	padding: 8px;
-	width: 100px;
 }
 .gallery-item-page {
 	bottom: 4px;
@@ -80,7 +87,13 @@ body {
 .gallery-item-page-control  {
 	display: inline-block;
 	vertical-align: middle;
-	width: 60px;
+	width: 45px;
+}
+.gallery-item-page-control--down {
+	cursor: s-resize;
+}
+.gallery-item-page-control--up {
+	cursor: n-resize;
 }
 /* place bookmark-body class on outline of main bookmark body svg for shimmer 
 	.gallery-item-drawing > svg path[class*="bookmark-body"]{
