@@ -21,7 +21,8 @@ for(const el_galleryItem of els_galleryItems){
 
 function revealHdPhoto(el_galleryItem) {
 	// get reference to drawing and hd image
-	const el_itemDrawing = el_galleryItem.querySelector('.gallery-item-display-drawing'),
+	const el_imageContainer = el_galleryItem.querySelector('.gallery-item-display'),
+				el_itemDrawing = el_galleryItem.querySelector('.gallery-item-display-drawing'),
 				el_itemPhoto = el_galleryItem.querySelector('.gallery-item-display-photo'),
 				el_itemNote = el_galleryItem.querySelector('.gallery-item-detail-note');
 	
@@ -35,6 +36,12 @@ function revealHdPhoto(el_galleryItem) {
 		
 		// reveal photo
 		el_itemPhoto.classList.remove('gallery-item-display--invisible');
+		
+
+		new ImageZoom(el_imageContainer,
+									{ fillContainer: true, zoomWidth: 150,
+										offset: {vertical: 0, horizontal: 10},
+										img: el_itemPhoto.src, zoomPosition: 'original'});
 	}
 }
 

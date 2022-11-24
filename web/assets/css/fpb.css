@@ -20,6 +20,7 @@ body {
 	width: 100%;
 }
 .gallery-item-detail {
+	max-width: 72px;
 	left: 8px;
 	position: absolute;
 	top: 8px;
@@ -29,7 +30,6 @@ body {
 	margin-top: 4px;
 }
 .gallery-item-detail-note {
-	max-width: 100px;
 	opacity: 1;
 	transition: opacity 1s;
 }
@@ -53,6 +53,9 @@ body {
 	position: absolute;
 	top: 4px;
 	transition: opacity 1s;
+}
+.gallery-item-display-photo {
+	cursor: zoom-in;
 }
 .gallery-item-display--invisible {
 	opacity: 0;
@@ -94,6 +97,16 @@ body {
 }
 .gallery-item-page-control--up {
 	cursor: n-resize;
+}
+@media only screen and (min-width: 420px)  {
+	.gallery-item-detail {
+		max-width: 120px;
+	}
+}
+@media only screen and (min-width: 690px)  {
+	.gallery-item-detail {
+		max-width: none;
+	}
 }
 /* place bookmark-body class on outline of main bookmark body svg for shimmer 
 	.gallery-item-drawing > svg path[class*="bookmark-body"]{
