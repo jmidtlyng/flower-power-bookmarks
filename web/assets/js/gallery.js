@@ -22,26 +22,27 @@ for(const el_galleryItem of els_galleryItems){
 function revealHdPhoto(el_galleryItem) {
 	// get reference to drawing and hd image
 	const el_imageContainer = el_galleryItem.querySelector('.gallery-item-display'),
-				el_itemDrawing = el_galleryItem.querySelector('.gallery-item-display-drawing'),
+				// el_itemDrawing = el_galleryItem.querySelector('.gallery-item-display-drawing'),
 				el_itemPhoto = el_galleryItem.querySelector('.gallery-item-display-photo'),
 				el_itemNote = el_galleryItem.querySelector('.gallery-item-detail-note');
 	
 	// only hide drawing if a photo is set
 	if(el_itemPhoto !== null){
 		// if drawing exists, hide
-		if(el_itemDrawing !== null){
-			el_itemDrawing.classList.add('gallery-item-display--invisible');
-			el_itemNote.classList.add('gallery-item-display--invisible');
-		}
+		// if(el_itemDrawing !== null){
+			// el_itemDrawing.classList.add('gallery-item-display--invisible');
+		// }
+		el_itemNote.classList.add('gallery-item-display--invisible');
 		
-		// reveal photo
 		el_itemPhoto.classList.remove('gallery-item-display--invisible');
-		
-
-		new ImageZoom(el_imageContainer,
-									{ fillContainer: true, zoomWidth: 150,
-										offset: {vertical: 0, horizontal: 10},
-										img: el_itemPhoto.src, zoomPosition: 'original'});
+		/*
+			// add zoom
+			new ImageZoom(el_imageContainer,
+										{ fillContainer: true,
+											offset: {vertical: 0, horizontal: 2},
+											zoomPosition: 'original',
+											scale: 0.5});
+		*/
 	}
 }
 

@@ -15,9 +15,7 @@
                 <div class='gallery-item'>
                     <div class='gallery-item-detail'>
                         <p class='gallery-item-detail-title'>{{ bookmark.title }}</p>
-                        {% if bookmarkDrawing and bookmarkDrawing.extension == 'svg' 
-                                and bookmarkPhoto %}
-                            <div class='gallery-item-detail-note'>
+                        <div class='gallery-item-detail-note'>
                                 <p>
                                     <text>Loading hd image</text>
                                     <!-- https://codepen.io/nikhil8krishnan/pen/rVoXJa -->
@@ -37,12 +35,13 @@
                                     </svg>
                                 </p>
                             </div>
-                        {% endif %}
                     </div>
                     <div class='gallery-item-display'>
-                        {% if bookmarkDrawing and bookmarkDrawing.extension == 'svg' %}
-                          {{ svg(bookmarkDrawing)|attr({class: 'gallery-item-display-drawing'}) }}
-                        {% endif %}
+                        {#
+                            {% if bookmarkDrawing and bookmarkDrawing.extension == 'svg' %}
+                              {{ svg(bookmarkDrawing)|attr({class: 'gallery-item-display-drawing'}) }}
+                            {% endif %}
+                        #}
                         {% if bookmarkPhoto %}
                             <image class="gallery-item-display-photo gallery-item-display--invisible"
                                     src="{{ bookmarkPhoto.url }}"
@@ -75,7 +74,6 @@
           <p>No bookmarks found.</p>
         {% endif %}    
     </div>
-    {% js "/assets/js/image-zoom.js" %}
     {% js "/assets/js/gallery.js" %}
 {% endblock %}
 
