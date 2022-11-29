@@ -66,9 +66,6 @@ body {
 	height: 100%;
 	transition: opacity 1s;
 }
-.gallery-item-display-photo {
-	cursor: zoom-in;
-}
 .gallery-item-display--invisible {
 	opacity: 0;
 }
@@ -120,12 +117,13 @@ body {
 		max-width: none;
 	}
 }
-/* place bookmark-body class on outline of main bookmark body svg for shimmer 
-	.gallery-item-drawing > svg path[class*="bookmark-body"]{
+/* place bookmark-body class on outline of main bookmark body svg for shimmer */
+	.gallery-item-display {
+		/*	
 			Similar to the Holofoil, but this uses a special image background of a galaxy effect with a gradient rainbow set to color-dodge & color-burn on top.
 			
 			https://github.com/simeydotme/pokemon-cards-css
-		
+		*/
 		background-image: url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
 											url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
 											url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
@@ -158,4 +156,3 @@ body {
 		z-index: 3;
 		background-position: center;
 	}
-*/
