@@ -20,7 +20,7 @@ for(const el_galleryItem of els_galleryItems){
 				// el_itemDrawing = el_galleryItem.querySelector('.gallery-item-display-drawing'),
 				el_itemPhoto = el_galleryItem.querySelector('.gallery-item-display-photo'),
 				el_itemNote = el_galleryItem.querySelector('.gallery-item-detail-note');
-	/*
+	
 	// only hide drawing if a photo is set
 	if(el_itemPhoto !== null){
 		// if photo is already loaded, fade in, otherwise wait for load
@@ -35,7 +35,6 @@ for(const el_galleryItem of els_galleryItems){
 				});
 		}
 	}
-	*/
 }
 
 function scrollToNext() {
@@ -47,4 +46,8 @@ function scrollToPrev() {
 	el_gallery.scrollBy({ top: -el_gallery.clientHeight,
 												left: 0,
 												behavior: 'smooth' });
+}
+
+function addToCart() {
+	
 }

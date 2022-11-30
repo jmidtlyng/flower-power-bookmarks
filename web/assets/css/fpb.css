@@ -74,6 +74,10 @@ body {
 	position: absolute;
 	right: 8px;
 }
+.gallery-item-order-stock {
+	margin: 0;
+	text-align: right;
+}
 .gallery-item-order-add {
 	background: #000;
 	border: #000;
@@ -89,6 +93,7 @@ body {
 	position: absolute;
 }
 .gallery-item-page p {
+	text-align: center;
 	margin: 0;
 }
 .gallery-item-page-control {
@@ -99,7 +104,7 @@ body {
 .gallery-item-page-control  {
 	display: inline-block;
 	vertical-align: middle;
-	width: 45px;
+	width: 48px;
 }
 .gallery-item-page-control--down {
 	cursor: s-resize;
@@ -117,13 +122,25 @@ body {
 		max-width: none;
 	}
 }
-/* place bookmark-body class on outline of main bookmark body svg for shimmer */
-	.gallery-item-display {
-		/*	
+/* place bookmark-body class on outline of main bookmark body svg for shimmer 
+	.gallery-item-display-placeholder,
+	.gallery-item-display-holo {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: block;
+		position: absolute;
+	}
+	.gallery-item-display-placeholder {
+		background-color: #fff;
+	}
+	.gallery-item-display-holo {
+		
 			Similar to the Holofoil, but this uses a special image background of a galaxy effect with a gradient rainbow set to color-dodge & color-burn on top.
 			
 			https://github.com/simeydotme/pokemon-cards-css
-		*/
+		
 		background-image: url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
 											url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
 											url("https://deck-24abcd.netlify.app/img/galaxy.jpg"),
@@ -155,4 +172,7 @@ body {
 		transform: translateZ(1px);
 		z-index: 3;
 		background-position: center;
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
 	}
+*/
