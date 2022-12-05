@@ -1,0 +1,31 @@
+{
+	"name": "youknowww/craft-yk-shop",
+	"description": "Simple ecomm plugin",
+	"type": "craft-plugin",
+	"keywords": ["ecomm"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "You Knowww",
+			"homepage": "https://www.youknowww.com"
+		}
+	],
+	"support": {
+		"email": "yk@youknowww.com",
+		"issues": "https://github.com/developer/repo/issues?state=open",
+		"source": "https://github.com/developer/repo",
+		"docs": "https://github.com/developer/repo/blob/master/README.md"
+	},
+	"require": {
+		"craftcms/cms": "^4.2.7"
+	},
+	"autoload": {
+		"psr-4": {
+			"YouKnowww\\YkShop\\": "src/"
+		}
+	},
+	"extra": {
+		"name": "Yk Shop",
+		"handle": "you-knowww-yk-shop"
+	}
+}

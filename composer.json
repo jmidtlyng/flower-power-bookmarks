@@ -1,7 +1,8 @@
 {
   "require": {
     "craftcms/cms": "^4.2.7",
-    "vlucas/phpdotenv": "^5.4.0"
+    "vlucas/phpdotenv": "^5.4.0",
+    "youknowww/craft-yk-shop": "dev-main"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -26,5 +27,13 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./yk-shop"
+    }
+  ]
 }
