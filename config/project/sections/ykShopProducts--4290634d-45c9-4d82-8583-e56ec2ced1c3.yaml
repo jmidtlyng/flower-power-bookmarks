@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+handle: ykShopProducts
+name: 'YK Shop Products'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  413c467c-3b45-4688-b781-9b0422e54679: # Flower Power Bookmarks
+    enabledByDefault: true
+    hasUrls: true
+    template: yk-shop-product/_entry
+    uriFormat: 'yk-shop-product/{slug}'
+type: channel
