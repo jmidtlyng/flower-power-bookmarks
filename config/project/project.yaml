@@ -1,4 +1,4 @@
-dateModified: 1670401442
+dateModified: 1670562964
 email:
   fromEmail: jacobmidtlyng@gmail.com
   fromName: 'Flower Power Bookmarks'
@@ -26,7 +26,6 @@ meta:
   __names__:
     0c3ae0ee-9e8a-4370-b662-42b43356521f: 'Image Drawing' # Image Drawing
     06d774b2-e458-4593-b46d-d734e700c9d9: Common # Common
-    9edffd5a-ec18-4a68-8ab0-1f8cbe81f504: Default
     032e8849-5453-40a1-9944-1946dcab9cfe: Bookmark # Bookmark
     34db3768-6290-41d3-9dba-29db1f90bd9a: 'Storefront Display' # Storefront Display
     40a793bb-ad73-4da9-be22-d9f1e49d823b: 'Flower Power Bookmarks' # Flower Power Bookmarks
@@ -35,11 +34,8 @@ meta:
     8826e0fa-1787-454d-97e5-957ed356239a: 'Bookmark List' # Bookmark List
     9216a446-a7a3-445e-be52-708ad70564e9: Drawings # Drawings
     49921f74-4cfa-4b9c-8273-f16787354db2: 'Public Schema' # Public Schema
-    4290634d-45c9-4d82-8583-e56ec2ced1c3: 'YK Shop Products'
     05432515-6f9c-4a46-8e71-9103b83ae43a: Bookmarks # Bookmarks
-    14511664-db36-40f2-a6f8-7fbadb581383: Price # Price
     a4006f11-e0f7-4689-97b6-ea028c72f3a6: 'Photo HD' # Photo HD
-    af2060f5-842c-4fe5-9095-f0bbd45c37a1: Stock # Stock
     c8c99040-999d-4123-bfe8-0b407e46fc76: 'Public Schema' # Public Schema
     e0286792-4431-410f-81da-29b57067f3c7: 'Main Page' # Main Page
     e23576ae-6c31-44c4-90ca-6edb93b75a5d: Photos # Photos
