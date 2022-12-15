@@ -10,7 +10,7 @@
             {% set bookmarkCounter = 1 %}
             
             {% for bookmark in bookmarks %}
-                {# {% set bookmarkDrawing = bookmark.imageDrawing.one() %} #}
+                {# {% set bookmarkDrawing = bookmark.imageDrawing.one() %}
                 {% set bookmarkPhoto = bookmark.photoHd.one() %}
                 <div class='gallery-item'>
                     <div class='gallery-item-detail'>
@@ -41,7 +41,7 @@
                             {% if bookmarkDrawing and bookmarkDrawing.extension == 'svg' %}
                               {{ svg(bookmarkDrawing)|attr({class: 'gallery-item-display-drawing'}) }}
                             {% endif %}
-                        #}
+                        #
                         {% if bookmarkPhoto %}
                             <img class="gallery-item-display-photo gallery-item-display--invisible"
                                 src="{{ bookmarkPhoto.url }}"
@@ -50,7 +50,7 @@
                         {#
                             <img class='gallery-item-display-placeholder'>
                             <div class='gallery-item-display-holo'></div>
-                        #}
+                        #
                     </div>
                     <div class="gallery-item-order">
                         <p class="gallery-item-order-stock">{{bookmark.stock}} avaible</p>
@@ -75,6 +75,7 @@
                         </div>
                     {% endif %}
                 </div>
+                #}
             {% endfor %}
         {% else %}
           <p>No bookmarks found.</p>

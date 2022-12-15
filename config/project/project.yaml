@@ -1,4 +1,4 @@
-dateModified: 1670562964
+dateModified: 1671092180
 email:
   fromEmail: jacobmidtlyng@gmail.com
   fromName: 'Flower Power Bookmarks'
@@ -40,11 +40,6 @@ meta:
     e0286792-4431-410f-81da-29b57067f3c7: 'Main Page' # Main Page
     e23576ae-6c31-44c4-90ca-6edb93b75a5d: Photos # Photos
     e1250554-36c5-46b1-9be5-62f85907583a: 'Public Schema' # Public Schema
-plugins:
-  yk-shop:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
